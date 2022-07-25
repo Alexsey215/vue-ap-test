@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import UserCard from './UserCard.vue';
-import UsersSort from './UsersSort.vue';
-import UsersPhoneSearch from './UsersPhoneSearch.vue';
+    import { mapGetters } from 'vuex';
+    import UserCard from './UserCard.vue';
+    import UsersSort from './UsersSort.vue';
+    import UsersPhoneSearch from './UsersPhoneSearch.vue';
 
     export default {
     computed: {

@@ -17,6 +17,12 @@
                 </v-col>  
             </v-card-text>
             <v-card-actions>
+                <v-btn         
+                    color="primary"
+                    @click="postsLoadHandler(user.id)"
+                >
+                    Posts
+                </v-btn>
             </v-card-actions>         
         </v-card>
     </v-row>
@@ -26,6 +32,13 @@
 export default {
     props: {
         usersData: Array
+    },
+    
+    methods: {
+        postsLoadHandler(userId) {
+            this.$router.push({ path: `/users/${userId}/posts` })
+        }
     }
+
 }
 </script>
